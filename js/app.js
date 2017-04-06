@@ -4,7 +4,7 @@ app.controller('searchCtrl', ['$scope', "$http", function($scope, $http){
 
 
     var url = "http://conferback.coala.io/conferences/api/conferences/";
-    
+    url = "data.json";
     $http({
         method: "GET",
         url: url
