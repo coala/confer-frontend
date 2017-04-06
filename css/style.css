@@ -80,3 +80,18 @@ footer.page-footer .footer-copyright {
 h1,h2,h3,h4,h5{
   font-weight: 100;
 }
+.close-search{
+  padding-top: 0.25em;
+}
+.conference-ul:not(.browser-default) li {
+  list-style-type: none;
+  flex-grow: 1;
+  width: 250px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.conference-ul{
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
