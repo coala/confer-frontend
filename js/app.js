@@ -4,14 +4,15 @@ app.controller('searchCtrl', ['$scope', function($scope){
 
   var temp_conf_object = {
     "name" : "Conf1",
-    "desc" : "desc1",
-    "venue" : "venue",
+    "desc" : `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                 tempor incididunt ut labore et dolore magna aliqua.`,
+    "venue" : "Here",
     "time" : "9:30",
-    "image" : "link"
+    "image" : "http://placehold.it/250x200"
   }
 
   for (var i = 0; i < 9; i++) {
-    $scope.conferences.push(temp_conf_object);
+        $scope.conferences.push(temp_conf_object);
   }
 
 }])
