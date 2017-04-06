@@ -85,10 +85,11 @@ h1,h2,h3,h4,h5{
 }
 .conference-ul:not(.browser-default) li {
   list-style-type: none;
+  display: inline-block;
   flex-grow: 1;
-  width: 250px;
   margin-left: 1em;
   margin-right: 1em;
+  width: calc(100% * (1/4) - 10px - 1px)
 }
 .conference-ul{
   display: -webkit-flex;
