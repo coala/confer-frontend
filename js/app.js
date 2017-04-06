@@ -9,8 +9,9 @@ app.controller('searchCtrl', ['$scope', "$http", function($scope, $http){
         method: "GET",
         url: url
     }).success(function(res){
+        res = res.data;
         for (var i = 0; i < res.length; i++){
-            $scope.conferences.push(temp_conf_object);
+            $scope.conferences.push(res[i]);
         }
     });
 
