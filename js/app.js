@@ -9,7 +9,6 @@ app.controller('searchCtrl', ['$scope', "$http", function($scope, $http){
         url: url
     }).success(function(res){
         console.log(res);
-        res = res.data;
         for (var i = 0; i < res.length; i++){
             $scope.conferences.push(res[i]);
         }
