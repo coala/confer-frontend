@@ -35,11 +35,11 @@
     <ul class="conference-ul">
         <li ng-repeat="conf in conferences track by $index">
            <div class="col s12 m6">
-             <div class="card">
+             <div id="{{conf.id}}" class="card">
                <div class="card-image">
                  <img src="{{conf.image}}">
                  <span class="card-title">{{conf.name}}</span>
-                 <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                 <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">info_outline</i></a>
                </div>
                <div class="card-content">
                  <p>{{conf.desc}}</p><br>
