@@ -18,11 +18,26 @@
                <div class="card-image">
                  <img src="http://placehold.it/250x200">
                  <span class="card-title">{{conf.name}}</span>
-                 <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">info_outline</i></a>
+                 <a ng-href="http://{{conf.website}}"class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">info_outline</i></a>
                </div>
                <div class="card-content">
                  <p>{{conf.desc}}</p><br>
                  <span>Place: {{conf.place}}<br>From: {{conf.start}}, To: {{conf.end}}</span>
+               </div>
+               <div ng-show="conf.crowded" class="crowded project-overview-element clickable card-action">
+                 <span class="crowded-title">HIGH INVOLVEMENT</span>
+                 <br>
+                 <span class="crowded-subtitle">If you haven't put work into this, look out for other projects for better chances!</span>
+               </div>
+               <div ng-show="conf.in_progress" class="in-progress project-overview-element clickable card-action">
+                 <span class="status-title">IN PROGRESS</span>
+                 <br>
+                 <span class="status-subtitle">Work on this project is going on at full pace!</span>
+               </div>
+               <div ng-show="conf.completed" class="completed project-overview-element clickable card-action">
+                 <span class="status-title">COMPLETED</span>
+                 <br>
+                 <span class="status-subtitle">Hooray!</span>
                </div>
              </div>
            </div>
