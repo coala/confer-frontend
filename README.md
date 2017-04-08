@@ -1,5 +1,7 @@
 <p align="center"><img src="images/confer.png"/></p>
 
+Join [our chat](https://gitter.im/coala/confer.coala.io)!
+
 A conference system to manage conference attendance for users and organizations likewise.
 
 confer-frontend : The source code in this repository is the frontend for the conference system.
