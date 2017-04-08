@@ -1,0 +1,32 @@
+<div>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <h1 class="header center orange-text">Search Conference</h1>
+        <div class="input-field z-depth-1">
+            <input id="search" type="search" required>
+            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            <i class="material-icons close-search">close</i>
+        </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="container">
+    <ul class="conference-ul">
+        <li ng-repeat="conf in conferences track by $index">
+           <div class="col s12 m6">
+             <div ng-click=go($index) id="{{conf.id}}" class="card">
+               <div class="card-image">
+                 <img src="http://placehold.it/250x200">
+                 <span class="card-title">{{conf.name}}</span>
+                 <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">info_outline</i></a>
+               </div>
+               <div class="card-content">
+                 <p>{{conf.desc}}</p><br>
+                 <span>Place: {{conf.place}}<br>From: {{conf.start}}, To: {{conf.end}}</span>
+               </div>
+             </div>
+           </div>
+        </li>
+    </ul>
+  </div>
+</div>

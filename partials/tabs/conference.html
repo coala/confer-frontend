@@ -1,0 +1,82 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="#/home" style="margin-left: 1em;" class="waves-effect waves-light btn">Back</a>
+    <ul class="right hide-on-med-and-down" style="margin-right: 5em;">
+      <li><a class="waves-effect waves-light btn">LOGIN</a></li>
+      <li><a class="waves-effect waves-light btn">ATTEND <i class="material-icons right">cloud</i></a></li>
+      <li><a class="waves-effect waves-light btn">NOTIFY FOR CfP</a></li>
+
+    </ul>
+  </div>
+</nav>
+<br><br>
+<div class="container">
+  <div class="">
+  <div class="row">
+    <div class="conference-name-large">{{currentConf.name}}</div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col m4">
+      <div class="small-heading">city</div>
+      <div class="content-conf">{{currentConf.city}}</div>
+    </div>
+    <div class="col m4">
+      <div class="small-heading">country</div>
+      <div class="content-conf">{{currentConf.country}}</div>
+    </div>
+    <div class="col m4">
+      <div class="small-heading">address</div>
+      <div class="content-conf">{{currentConf.address}}</div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col m6">
+      <div class="small-heading">start</div>
+      <div class="content-conf">{{currentConf.start}}</div>
+    </div>
+    <div class="col m6">
+      <div class="small-heading">end</div>
+      <div class="content-conf">{{currentConf.end}}</div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col m3">
+      <div class="small-heading">lat</div>
+      <div class="content-conf">{{currentConf.latitude}}</div>
+    </div>
+    <div class="col m3">
+      <div class="small-heading">long</div>
+      <div class="content-conf">{{currentConf.longitude}}</div>
+    </div>
+    <div class="col m3">
+      <div class="small-heading">source url</div>
+      <div class="content-conf">{{currentConf.source_url}}</div>
+    </div>
+    <div class="col m3">
+      <div class="small-heading">website</div>
+      <div class="content-conf">{{currentConf.website}}</div>
+    </div>
+  </div>
+</div>
+</div>
+<style>
+.small-heading{
+  text-transform: uppercase;
+font-weight: 600;
+letter-spacing: 0.2em;
+color: darkslategrey;
+font-size: 1.3em;
+}
+.conference-name-large{
+  font-family: Roboto;
+    font-size: 4em;
+    font-weight: 100;
+}
+.content-conf{
+  font-size: 2em;
+    font-weight: 100;
+}
+</style>

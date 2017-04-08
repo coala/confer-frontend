@@ -96,3 +96,14 @@ h1,h2,h3,h4,h5{
   flex-direction: row;
   flex-wrap: wrap;
 }
+.btn:hover,
+.btn-large:hover {
+  background-color: #424242 !important;
+}
+.btn,
+.btn-large {
+  background-color: black !important;
+}
+nav {
+  background-color: #263238 !important;
+}
