@@ -107,3 +107,25 @@ h1,h2,h3,h4,h5{
 nav {
   background-color: #263238 !important;
 }
+.crowded{
+  background: red !important;
+  text-align: center;
+  color: white;
+}
+.completed{
+  background: lightseagreen !important;
+  text-align: center;
+  color: white;
+}
+.in-progress{
+  background: yellow !important;
+  text-align: center;
+  color: black;
+}
+.status-title{
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+.status-subtitle{
+  font-size: 0.8em !important;
+}
